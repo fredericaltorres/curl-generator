@@ -27,7 +27,6 @@ const DEFAULT_STATE = {
     curl_password: '',
 };
 
-
 class CurlGenerator extends Component {
 
     state = {...DEFAULT_STATE};
