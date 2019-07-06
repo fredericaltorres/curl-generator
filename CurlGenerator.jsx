@@ -5,6 +5,8 @@ import {
     CurlGeneratorEngine 
 } from './CurlGeneratorEngine';
 
+import './CurlGenerator.css';
+
 const APP_LINKS = {
 
     "curl website" : "https://curl.haxx.se",
@@ -86,7 +88,7 @@ class CurlGenerator extends Component {
 
     onBodyChange = (e) => {
 
-        this.updateState('curl_body', e.target.value.toLocaleLowerCase());
+        this.updateState('curl_body', e.target.value);
     }
 
     isBodyTypeJson () {
